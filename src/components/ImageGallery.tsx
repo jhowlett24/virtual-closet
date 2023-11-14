@@ -23,7 +23,7 @@ const ImageGallery = () => {
           </figure>
           <div className="card-body">
             <p>Upload by: {image.userEmail}</p>
-            <span>Created On: {image.createdAt.toLocaleDateString()}</span>
+            <span>Uploaded On: {image.createdAt.toLocaleDateString()}</span>
           </div>
         </div>
       ))}

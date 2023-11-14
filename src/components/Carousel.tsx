@@ -7,14 +7,20 @@ import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
-  <div className="slick-arrow custom-prev-arrow" onClick={onClick}>
-    Prev
+  <div
+    className="custom-arrow custom-prev-arrow absolute top-[50%] left-[-40px] transform -translate-y-1/2 text-4xl"
+    onClick={onClick}
+  >
+    &larr;
   </div>
 );
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
-  <div className="slick-arrow custom-next-arrow" onClick={onClick}>
-    Next
+  <div
+    className="custom-arrow custom-next-arrow absolute top-[50%] right-0 transform -translate-y-1/2 text-4xl"
+    onClick={onClick}
+  >
+    &rarr;
   </div>
 );
 
@@ -30,7 +36,7 @@ const Carousel = () => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1, // Show one slide at a time
@@ -58,9 +64,9 @@ const Carousel = () => {
                 }}
               />
             </figure>
-            <div className="card-body">
+            <div className="card-body text-center">
               <p>Upload by: {image.userEmail}</p>
-              <span>Created On: {image.createdAt.toLocaleDateString()}</span>
+              <span>Uploaded On: {image.createdAt.toLocaleDateString()}</span>
             </div>
           </div>
         </div>

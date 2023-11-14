@@ -4,6 +4,7 @@ import { storage, db } from "../firebase/config";
 import { v4 as uuidv4 } from "uuid";
 import { addDoc, collection } from "firebase/firestore";
 import { useAuth } from "./useAuth";
+
 const useStorage = () => {
   const [progress, setProgress] = useState<number>(0);
   const [error, setError] = useState<Error | null>(null);
