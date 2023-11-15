@@ -12,10 +12,12 @@ const NavBar = () => {
   };
   return (
     <div className="navbar bg-base-100 justify-between">
-      <a className="font-bold normal-case text-xl underline">
+      <a className="font-bold normal-case text-4xl underline">
         Virtual Wardrobe
       </a>
-      <button onClick={handleLogOut}>Logout</button>
+      <button className="text-3xl" onClick={handleLogOut}>
+        Logout
+      </button>
     </div>
   );
 };

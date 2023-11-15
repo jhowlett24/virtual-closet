@@ -8,7 +8,7 @@ import "../CSS/Carousel.css"; // Import your custom styles
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="custom-arrow custom-prev-arrow absolute top-[50%] left-[-40px] transform -translate-y-1/2 text-4xl"
+    className="custom-arrow custom-prev-arrow absolute top-[50%] left-[100px] transform -translate-y-1/2 text-5xl z-10"
     onClick={onClick}
   >
     &larr;
@@ -17,7 +17,7 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="custom-arrow custom-next-arrow absolute top-[50%] right-0 transform -translate-y-1/2 text-4xl"
+    className="custom-arrow custom-next-arrow absolute top-[50%] right-[100px] transform -translate-y-1/2 text-5xl"
     onClick={onClick}
   >
     &rarr;
@@ -52,13 +52,13 @@ const Carousel = () => {
       {images.map((image) => (
         <div key={image.imageUrl}>
           <div className="card card-compact bg-base-100 square-slide">
-            <figure className="flex items-center justify-center">
+            <figure className="flex items-center justify-center h-[400px]">
               <img
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
                   width: "30%",
-                  height: "fit-content",
+                  //height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",
                 }}

@@ -1,5 +1,4 @@
 import {
-  QuerySnapshot,
   collection,
   onSnapshot,
   orderBy,
