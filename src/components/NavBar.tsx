@@ -11,7 +11,7 @@ const NavBar = () => {
     }
   };
   return (
-    <div className="navbar bg-base-100 justify-between">
+    <div className="navbar justify-between">
       <a className="font-bold normal-case text-4xl underline">
         Virtual Wardrobe
       </a>

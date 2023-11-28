@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import useStorage from "../hooks/useStorage";
+import useStorageBottom from "../hooks/useStorageBottom";
 
-const UploadForm = () => {
+const UploadFormBottom = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const { startUpload, progress } = useStorage();
+  const { startUpload, progress } = useStorageBottom();
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -21,7 +22,7 @@ const UploadForm = () => {
 
   return (
     <div className="text-center mt-10">
-      <div className="font-bold normal-case text-2xl mb-5">Upload Top!</div>
+      <div className="font-bold normal-case text-2xl mb-5">Upload Bottom!</div>
       <form
         onSubmit={handleSubmit}
         className="flex items-center flex-col gap-8"
@@ -36,11 +37,11 @@ const UploadForm = () => {
           className={`btn gap-3 ${Boolean(progress) && "loading"}`}
           disabled={!selectedFile}
         >
-          Upload Top<span>🫡</span>
+          Upload Bottom<span>🫡</span>
         </button>
       </form>
     </div>
   );
 };
 
-export default UploadForm;
+export default UploadFormBottom;

@@ -1,7 +1,7 @@
 import useFireStore from "../hooks/useFireStore";
 
 const ImageGallery = () => {
-  const { docs: images, isLoading } = useFireStore("images");
+  const { docs: images, isLoading } = useFireStore("bottom");
 
   if (isLoading) {
     return (
@@ -13,7 +13,7 @@ const ImageGallery = () => {
 
   return (
     <div className="text-center font-bold text-4xl mt-10">
-      Tops:
+      Bottoms:
       <div className="grid md:grid-cols-3 justify-center gap-4 mt-10">
         {images.map((image) => (
           <div

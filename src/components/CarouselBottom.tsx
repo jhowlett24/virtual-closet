@@ -25,11 +25,11 @@ const CustomNextArrow: React.FC<any> = ({ onClick }) => (
 );
 
 const Carousel = () => {
-  const { docs: images, isLoading } = useFireStore("images");
+  const { docs: images, isLoading } = useFireStore("bottom");
 
   if (isLoading) {
     return (
-      <div className="text-center mt-20 -mb-20]">
+      <div className="text-center -mt-30">
         <progress className="progress w-56"></progress>
       </div>
     );
@@ -51,8 +51,8 @@ const Carousel = () => {
     <Slider {...settings}>
       {images.map((image) => (
         <div key={image.imageUrl}>
-          <div className="card card-compact bg-base-100 square-slide">
-            <figure className="flex items-center justify-center h-[400px]">
+          <div className="card card-compact bg-base-100">
+            <figure className="flex items-center justify-center h-full">
               <img
                 src={image.imageUrl}
                 alt="Shoes"
