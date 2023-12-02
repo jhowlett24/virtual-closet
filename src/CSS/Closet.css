@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap");
+
+.closet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Fira Code';
+    font-size: large;
+    background-color: lightblue;
+}
+
+.closet-image{
+    width:150px;
+}

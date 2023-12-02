@@ -5,22 +5,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
+import next from '../Images/next.svg'
+import prev from '../Images/prev.svg'
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="custom-arrow custom-prev-arrow absolute top-[50%] left-[100px] transform -translate-y-1/2 text-5xl z-10"
+    className="prev-arrow absolute top-[50%] left-[40%] z-10"
     onClick={onClick}
   >
-    &larr;
+    <img src={prev} className="prev-arrow-clueless"></img>
   </div>
 );
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="custom-arrow custom-next-arrow absolute top-[50%] right-[100px] transform -translate-y-1/2 text-5xl"
+    className="next-arrow absolute top-[50%] right-[40%]"
     onClick={onClick}
   >
-    &rarr;
+     <img src={next} className="next-arrow-clueless"></img>
   </div>
 );
 
@@ -51,23 +53,19 @@ const Carousel = () => {
     <Slider {...settings}>
       {images.map((image) => (
         <div key={image.imageUrl}>
-          <div className="card card-compact bg-base-100">
-            <figure className="flex items-center justify-center h-full">
+          <div className="card card-compact">
+            <figure className="flex items-center justify-center h-[500px]">
               <img
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
-                  width: "30%",
+                  width: "15%",
                   height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",
                 }}
               />
             </figure>
-            {/* <div className="card-body text-center">
-              <p>Upload by: {image.userEmail}</p>
-              <span>Uploaded On: {image.createdAt.toLocaleDateString()}</span>
-            </div> */}
           </div>
         </div>
       ))}

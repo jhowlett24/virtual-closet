@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap");
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    font-family: 'Fira Code';
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: lightyellow;
+  }
+
+  .login-item{
+    margin-top: 1rem;
+  }
+
+  .login-img{
+    width: 100%;
+  }
+
+  .form-control{
+    font-family: 'Fira Code';
+    outline:auto;
+    outline-offset: .3cap;
+    outline-color: lightblue;
+    background-color: lightyellow;
+    border: none;
+    width: 100%;
+}
+
+.login-link{
+    margin-top:2rem;
+    color: black;
+    outline:auto;
+    outline-offset: .3cap;
+    outline-color: lightblue;
+    width: 20%;
+    
+}
+
+.forgot-password-link{
+    margin-top: 3rem;
+}
+
+.signup{
+    font-family: 'Fira Code';
+    background-color: lightyellow;
+}
+
+.hero-content{
+    background-color: lightyellow;
+    height:100%;
+}
+
+.signup-button{
+    background-color: white;
+    /* width: 40%; */
+}

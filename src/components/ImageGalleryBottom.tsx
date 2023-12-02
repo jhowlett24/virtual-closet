@@ -18,15 +18,12 @@ const ImageGallery = () => {
         {images.map((image) => (
           <div
             key={image.imageUrl}
-            className="card card-compact w-full bg-base-100 shadow-xl"
+            className="card card-compact closet-image"
           >
             <figure>
               <img src={image.imageUrl} alt="Shoes" />
             </figure>
-            <div className="card-body">
-              <p>Upload by: {image.userEmail}</p>
-              <span>Uploaded On: {image.createdAt.toLocaleDateString()}</span>
-            </div>
+
           </div>
         ))}
       </div>

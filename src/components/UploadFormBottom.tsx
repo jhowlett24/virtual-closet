@@ -22,7 +22,7 @@ const UploadFormBottom = () => {
 
   return (
     <div className="text-center mt-10">
-      <div className="font-bold normal-case text-2xl mb-5">Upload Bottom!</div>
+      <div className="font-bold normal-case text-2xl mb-5">New Bottoms?</div>
       <form
         onSubmit={handleSubmit}
         className="flex items-center flex-col gap-8"
@@ -37,7 +37,7 @@ const UploadFormBottom = () => {
           className={`btn gap-3 ${Boolean(progress) && "loading"}`}
           disabled={!selectedFile}
         >
-          Upload Bottom<span>🫡</span>
+          Upload Bottom<span></span>
         </button>
       </form>
     </div>

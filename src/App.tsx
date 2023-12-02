@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import { AuthProvider } from "./context/auth";
 import PublicRoute from "./routes/PublicRoute";
 import PrivateRoute from "./routes/PrivateRoute";
+import Closet from "./pages/Closet";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -17,8 +19,27 @@ function App() {
             </PrivateRoute>
           }
         />
+
         <Route
-          path="signup"
+          path="/closet"
+          element={
+            <PrivateRoute>
+              <Closet />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/login"
+          element={
+            <PrivateRoute>
+              <Login />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/signup"
           element={
             <PublicRoute>
               <Signup />

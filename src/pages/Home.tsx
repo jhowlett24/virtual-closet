@@ -1,24 +1,16 @@
-import React from "react";
 import NavBar from "../components/NavBar";
-import UploadForm from "../components/UploadForm";
-import ImageGallery from "../components/ImageGallery";
 import CarouselBottom from "../components/CarouselBottom";
-import UploadFormBottom from "../components/UploadFormBottom";
 import Carousel from "../components/Carousel";
-import ImageGalleryBottom from "../components/ImageGalleryBottom";
+import '../CSS/Home.css'
+import CarouselContainer from "../components/CarouselContainer";
+
 
 const Home = () => {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="home">
       <NavBar />
-      <Carousel />
-      <CarouselBottom />
-      <UploadForm />
-      <UploadFormBottom />
-      <ImageGallery />
-      <ImageGalleryBottom />
+      <CarouselContainer />
     </div>
   );
 };
-
 export default Home;
