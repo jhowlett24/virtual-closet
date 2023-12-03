@@ -12,19 +12,30 @@ import cheetah from '../Images/cheetah.svg'
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="prev-arrow absolute top-[80%] left-[40%] z-10"
+    className="prev-arrow absolute top-[80%] left-[40%] z-10 cursor-pointer"
     onClick={onClick}
   >
-    <img src={prev} className="prev-arrow-clueless"></img>
+    <img src={prev} className="prev-arrow-clueless" alt="Previous"></img>
   </div>
 );
 
+// const CustomNextArrow: React.FC<any> = ({ onClick }) => (
+//   <div
+//     className="next-arrow absolute top-[80%] right-[40%]"
+//     onClick={onClick}
+//   >
+//      <img src={next} className="next-arrow-clueless"></img>
+//   </div>
+// );
+// below is the revised version adding cursor-pointer and z-10 put the arrow bottom above other element
+// I also added alt for better accessiblitiy
+
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[80%] right-[40%]"
+    className="next-arrow absolute top-[80%] right-[40%] z-10 cursor-pointer"
     onClick={onClick}
   >
-     <img src={next} className="next-arrow-clueless"></img>
+     <img src={next} className="next-arrow-clueless" alt="Next" />
   </div>
 );
 
