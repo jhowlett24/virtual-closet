@@ -6,6 +6,7 @@ import PublicRoute from "./routes/PublicRoute";
 import PrivateRoute from "./routes/PrivateRoute";
 import Closet from "./pages/Closet";
 import Login from "./pages/Login";
+import Random from "./pages/Random";
 
 function App() {
   return (
@@ -25,6 +26,15 @@ function App() {
           element={
             <PrivateRoute>
               <Closet />
+            </PrivateRoute>
+          }
+        />
+
+          <Route
+          path="/random"
+          element={
+            <PrivateRoute>
+              <Random/>
             </PrivateRoute>
           }
         />

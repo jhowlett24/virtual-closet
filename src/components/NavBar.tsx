@@ -24,6 +24,7 @@ const NavBar = () => {
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li> <Link to='/'>Home</Link> </li>
             <li> <Link to='/closet'>My Closet</Link> </li>
+            <li> <Link to='/random'>Randomize Outfits</Link> </li>
             <li> <Link to = '/signup' onClick={handleLogOut}> Logout </Link> </li>
             {/* <li> <Link to='/favorites'>Favorite Fits</Link> </li> */}
         </ul>
