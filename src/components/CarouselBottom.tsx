@@ -10,7 +10,7 @@ import prev from '../Images/prev.svg'
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="prev-arrow absolute top-[50%] left-[40%] z-10"
+    className="prev-arrow absolute top-[50%] left-[40%] z-10 cursor-pointer"
     onClick={onClick}
   >
     <img src={prev} className="prev-arrow-clueless"></img>
@@ -19,7 +19,7 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[50%] right-[40%]"
+    className="next-arrow absolute top-[50%] right-[40%] cursor-pointer"
     onClick={onClick}
   >
      <img src={next} className="next-arrow-clueless"></img>
