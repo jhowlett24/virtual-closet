@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
+import '../CSS/Inspiration.css'
 import next from "../Images/next.svg";
 import prev from "../Images/prev.svg";
 import cheetah from "../Images/cheetah.svg";
@@ -35,7 +36,7 @@ const Carousel = () => {
   };
 
   return (
-    <Slider {...settings} className="slider-top">
+    <Slider {...settings} className="inspiration slider-top">
       {images.map((image) => (
         <div key={image.imageUrl}>
           <div className="card card-compact">

@@ -7,7 +7,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import Closet from "./pages/Closet";
 import Login from "./pages/Login";
 import Random from "./pages/Random";
-import Inspiration from "./components/Inspiration";
+import InspirationPage from "./pages/InspirationPage";
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
           path="/inspiration"
           element={
             <PrivateRoute>
-              <Inspiration />
+              <InspirationPage/>
             </PrivateRoute>
           }
         />
