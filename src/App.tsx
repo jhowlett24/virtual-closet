@@ -7,6 +7,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import Closet from "./pages/Closet";
 import Login from "./pages/Login";
 import Random from "./pages/Random";
+import Automation from "./pages/Automation";
 
 function App() {
   return (
@@ -30,11 +31,19 @@ function App() {
           }
         />
 
-          <Route
+        <Route
           path="/random"
           element={
             <PrivateRoute>
-              <Random/>
+              <Random />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/automata"
+          element={
+            <PrivateRoute>
+              <Automation />
             </PrivateRoute>
           }
         />

@@ -36,6 +36,10 @@ const NavBar = () => {
         </li>
         <li>
           {" "}
+          <Link to="/automata">Inspiration</Link>{" "}
+        </li>
+        <li>
+          {" "}
           <Link to="/signup" onClick={handleLogOut}>
             {" "}
             Logout{" "}
