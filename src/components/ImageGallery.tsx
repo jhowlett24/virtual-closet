@@ -1,5 +1,5 @@
 import useFireStore from "../hooks/useFireStore";
-import '../CSS/Closet.css'
+import "../CSS/Closet.css";
 
 const ImageGallery = () => {
   const { docs: images, isLoading } = useFireStore("images");
@@ -13,18 +13,17 @@ const ImageGallery = () => {
   }
 
   return (
-    <div className="text-center font-bold text-4xl mt-10">
+    <div className="text-center text-black font-bold text-4xl mt-10">
       Tops:
       <div className="grid sm:grid-cols-1 md:grid-cols-3 justify-center gap-1 mt-10">
         {images.map((image) => (
           <div
             key={image.imageUrl}
-            className="card card-compact closet-image closet-image-top"
+            className="card card-compact closet-image"
           >
             <figure>
-              <img src={image.imageUrl} alt="Shoes"/>
+              <img src={image.imageUrl} alt="Shoes" />
             </figure>
-
           </div>
         ))}
       </div>

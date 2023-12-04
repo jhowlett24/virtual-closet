@@ -21,7 +21,9 @@ const UploadForm = () => {
 
   return (
     <div className="text-center mt-10">
-      <div className="font-bold normal-case text-2xl mb-5">New Tops?</div>
+      <div className="font-bold text-black normal-case text-2xl mb-5">
+        New Tops?
+      </div>
       <form
         onSubmit={handleSubmit}
         className="flex items-center flex-col gap-8"
