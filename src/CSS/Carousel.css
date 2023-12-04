@@ -1,9 +1,79 @@
 /* Carousel.css */
 
 .next-arrow{
+  position: absolute;
+  top:80%;
+  right: 25%;
   width: 10%;
 }
 
 .prev-arrow{
+  position: absolute;
+  top:80%;
+  left: 25%;
   width: 10%;
+}
+
+.next-arrow-bottom{
+  top: 50%;
+}
+
+.prev-arrow-bottom{
+  top: 50%;
+}
+
+.top-image-carousel{
+  width: 250px;
+}
+
+.bottom-image-carousel{
+  width: 250px;
+}
+
+.top-carousel{
+  /* height: 10%; */
+  height: 225px;
+}
+
+.bottom-carousel{
+  /* height: 20%; */
+  height:250x;
+}
+
+@media screen and (max-width: 450px){
+  .next-arrow{
+    position: absolute;
+    width: 30%;
+    right: 10px;
+  }
+  
+  .prev-arrow{
+    position: absolute;
+    width: 30%;
+    left: 10px;
+  }
+
+  .next-arrow-bottom{
+    top: 60%;
+  }
+
+  .prev-arrow-bottom{
+    top: 60%;
+  }
+
+  .top-carousel{
+    height: 300px;
+  }
+
+  .bottom-carousel{
+    height: 480px;
+  }
+
+  .top-image-carousel{
+    width: 60%;
+  }
+
+  .bottom-image-carousel{
+    width: 60%;
+  }
 }

@@ -2,8 +2,17 @@
     display: flex;
     flex-direction: column;
     background-color: lightblue;
-    background-image: url("background.svg");
+    /* background-image: url("background.svg"); */
     background-size: contain;
     height: 100% !important;
     width: 100% !important; 
   }
+
+  /* @media screen and (max-width: 450px){
+    
+    .home{
+      background-color: lightblue;
+      height: 100%;
+    }
+
+  } */

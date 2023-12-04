@@ -10,7 +10,7 @@ import prev from "../Images/prev.svg";
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="prev-arrow absolute top-[50%] left-[25%] z-10 cursor-pointer"
+    className="prev-arrow prev-arrow-bottom z-10 cursor-pointer"
     onClick={onClick}
   >
     <img src={prev} className="prev-arrow-clueless"></img>
@@ -19,7 +19,7 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[50%] right-[25%] cursor-pointer"
+    className="next-arrow next-arrow-bottom cursor-pointer"
     onClick={onClick}
   >
     <img src={next} className="next-arrow-clueless"></img>
@@ -54,12 +54,12 @@ const Carousel = () => {
       {images.map((image) => (
         <div key={image.imageUrl}>
           <div className="card card-compact">
-            <figure className="flex items-center justify-center h-[500px]">
+            <figure className="bottom-carousel flex items-center justify-center">
               <img
+                className="bottom-image-carousel"
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
-                  width: "15%",
                   height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",

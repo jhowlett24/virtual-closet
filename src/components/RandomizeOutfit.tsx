@@ -43,12 +43,12 @@ const RandomImageDisplay: React.FC<RandomImageDisplayProps> = ({
   return (
     <div>
       <div className="card card-compact">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center h-full">
           <img
             src={randomImage.imageUrl}
             alt="Random Top"
             style={{
-              width: "25%",
+              width: "15%",
               height: "fit-content",
               objectFit: "cover",
               borderRadius: "8px",
@@ -58,12 +58,12 @@ const RandomImageDisplay: React.FC<RandomImageDisplayProps> = ({
       </div>
 
       <div className="card card-compact mt-4">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center h-full">
           <img
             src={randomBottom.imageUrl}
             alt="Random Bottom"
             style={{
-              width: "25%",
+              width: "30%",
               height: "fit-content",
               objectFit: "cover",
               borderRadius: "8px",

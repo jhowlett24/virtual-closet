@@ -10,5 +10,15 @@
 }
 
 .closet-image{
-    width:150px;
+    align-content: center;
+
+}
+
+
+.closet-image-top{
+    width:50%;
+}
+
+.closet-image-bottom{
+    width: 70%;
 }

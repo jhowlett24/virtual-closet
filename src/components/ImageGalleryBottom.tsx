@@ -14,11 +14,11 @@ const ImageGallery = () => {
   return (
     <div className="text-center font-bold text-4xl mt-10">
       Bottoms:
-      <div className="grid md:grid-cols-3 justify-center gap-4 mt-10">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 justify-content-center gap-1 mt-10">
         {images.map((image) => (
           <div
             key={image.imageUrl}
-            className="card card-compact closet-image"
+            className="card card-compact closet-image closet-image-bottom"
           >
             <figure>
               <img src={image.imageUrl} alt="Shoes" />

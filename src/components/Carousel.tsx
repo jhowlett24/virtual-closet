@@ -11,7 +11,7 @@ import cheetah from "../Images/cheetah.svg";
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="prev-arrow absolute top-[80%] left-[25%] z-10 cursor-pointer"
+    className="prev-arrow z-10 cursor-pointer"
     onClick={onClick}
   >
     <img src={prev} className="prev-arrow-clueless" alt="Previous"></img>
@@ -31,7 +31,7 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[80%] right-[25%] z-10 cursor-pointer"
+    className="next-arrow z-10 cursor-pointer"
     onClick={onClick}
   >
     <img src={next} className="next-arrow-clueless" alt="Next" />
@@ -66,12 +66,12 @@ const Carousel = () => {
       {images.map((image) => (
         <div key={image.imageUrl}>
           <div className="card card-compact">
-            <div className="flex items-center justify-center h-full">
+            <div className="top-carousel flex items-center justify-center">
               <img
+                className="top-image-carousel"
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
-                  width: "10%",
                   height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",
