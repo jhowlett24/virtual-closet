@@ -48,8 +48,7 @@ const RandomImageDisplay: React.FC<RandomImageDisplayProps> = ({
             src={randomImage.imageUrl}
             alt="Random Top"
             style={{
-              width: "25%",
-              height: "fit-content",
+              width: "90%",
               objectFit: "cover",
               borderRadius: "8px",
             }}
@@ -63,8 +62,7 @@ const RandomImageDisplay: React.FC<RandomImageDisplayProps> = ({
             src={randomBottom.imageUrl}
             alt="Random Bottom"
             style={{
-              width: "25%",
-              height: "fit-content",
+              width: "90%",
               objectFit: "cover",
               borderRadius: "8px",
             }}
