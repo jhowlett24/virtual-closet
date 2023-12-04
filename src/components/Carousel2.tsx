@@ -9,34 +9,6 @@ import next from "../Images/next.svg";
 import prev from "../Images/prev.svg";
 import cheetah from "../Images/cheetah.svg";
 
-const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
-  <div
-    className="prev-arrow absolute top-[30%] left-[25%] z-10 cursor-pointer"
-    onClick={onClick}
-  >
-    <img src={prev} className="prev-arrow-clueless" alt="Previous"></img>
-  </div>
-);
-
-// const CustomNextArrow: React.FC<any> = ({ onClick }) => (
-//   <div
-//     className="next-arrow absolute top-[80%] right-[40%]"
-//     onClick={onClick}
-//   >
-//      <img src={next} className="next-arrow-clueless"></img>
-//   </div>
-// );
-// below is the revised version adding cursor-pointer and z-10 put the arrow bottom above other element
-// I also added alt for better accessiblitiy
-
-const CustomNextArrow: React.FC<any> = ({ onClick }) => (
-  <div
-    className="next-arrow absolute top-[30%] right-[25%] z-10 cursor-pointer"
-    onClick={onClick}
-  >
-    <img src={next} className="next-arrow-clueless" alt="Next" />
-  </div>
-);
 
 const Carousel = () => {
   const { docs: images, isLoading } = useFireStore("images");
@@ -53,15 +25,13 @@ const Carousel = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1300,
     speed: 500,
     slidesToShow: 3, // Show one slide at a time
     slidesToScroll: 1,
     centerMode: true, // Center the current slide
     centerPadding: "0", // No padding for the center mode
     pauseOnHover: false,
-    //prevArrow: <CustomPrevArrow />,
-    //nextArrow: <CustomNextArrow />,
   };
 
   return (

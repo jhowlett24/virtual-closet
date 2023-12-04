@@ -36,7 +36,7 @@ const NavBar = () => {
         </li>
         <li>
           {" "}
-          <Link to="/automata">Inspiration</Link>{" "}
+          <Link to="/inspiration">Inspiration</Link>{" "}
         </li>
         <li>
           {" "}

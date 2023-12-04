@@ -40,16 +40,18 @@
   height:250x;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .next-arrow{
     position: absolute;
-    width: 30%;
+    top: 100%;
+    width: 25%;
     right: 10px;
   }
   
   .prev-arrow{
     position: absolute;
-    width: 30%;
+    top: 100%;
+    width: 25%;
     left: 10px;
   }
 
@@ -62,11 +64,11 @@
   }
 
   .top-carousel{
-    height: 300px;
+    height: 325px;
   }
 
   .bottom-carousel{
-    height: 480px;
+    height: 500px;
   }
 
   .top-image-carousel{

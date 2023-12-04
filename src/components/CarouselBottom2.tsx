@@ -8,24 +8,6 @@ import "../CSS/Carousel.css"; // Import your custom styles
 import next from "../Images/next.svg";
 import prev from "../Images/prev.svg";
 
-const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
-  <div
-    className="prev-arrow absolute top-[30%] left-[25%] z-10 cursor-pointer"
-    onClick={onClick}
-  >
-    <img src={prev} className="prev-arrow-clueless"></img>
-  </div>
-);
-
-const CustomNextArrow: React.FC<any> = ({ onClick }) => (
-  <div
-    className="next-arrow absolute top-[30%] right-[25%] cursor-pointer"
-    onClick={onClick}
-  >
-    <img src={next} className="next-arrow-clueless"></img>
-  </div>
-);
-
 const Carousel = () => {
   const { docs: images, isLoading } = useFireStore("bottom");
 
@@ -46,7 +28,7 @@ const Carousel = () => {
     centerMode: true, // Center the current slide
     centerPadding: "0", // No padding for the center mode
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1300,
     rtl: true,
     pauseOnHover: false,
     //prevArrow: <CustomPrevArrow />,

@@ -7,7 +7,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import Closet from "./pages/Closet";
 import Login from "./pages/Login";
 import Random from "./pages/Random";
-import Automation from "./pages/Automation";
+import Inspiration from "./components/Inspiration";
 
 function App() {
   return (
@@ -40,10 +40,10 @@ function App() {
           }
         />
         <Route
-          path="/automata"
+          path="/inspiration"
           element={
             <PrivateRoute>
-              <Automation />
+              <Inspiration />
             </PrivateRoute>
           }
         />

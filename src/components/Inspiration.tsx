@@ -1,12 +1,13 @@
 import Carousel2 from "./Carousel2";
 import CarouselBottom2 from "./CarouselBottom2";
+import '../CSS/Inspiration.css'
 
-const CarouselContainer = () => {
+const Inspiration = () => {
   return (
-    <div>
+    <div className="inspiration">
       <Carousel2 />
       <CarouselBottom2 />
     </div>
   );
 };
-export default CarouselContainer;
+export default Inspiration;
