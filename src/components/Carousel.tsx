@@ -71,7 +71,7 @@ const Carousel = () => {
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
-                  width: "15%",
+                  width: "20%",
                   height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",
