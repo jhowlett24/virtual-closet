@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
-import next from '../Images/next.svg'
-import prev from '../Images/prev.svg'
+import next from "../Images/next.svg";
+import prev from "../Images/prev.svg";
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="prev-arrow absolute top-[50%] left-[40%] z-10 cursor-pointer"
+    className="prev-arrow absolute top-[50%] left-[25%] z-10 cursor-pointer"
     onClick={onClick}
   >
     <img src={prev} className="prev-arrow-clueless"></img>
@@ -19,10 +19,10 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[50%] right-[40%] cursor-pointer"
+    className="next-arrow absolute top-[50%] right-[25%] cursor-pointer"
     onClick={onClick}
   >
-     <img src={next} className="next-arrow-clueless"></img>
+    <img src={next} className="next-arrow-clueless"></img>
   </div>
 );
 
