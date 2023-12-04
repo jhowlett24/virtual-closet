@@ -54,13 +54,13 @@ const Carousel = () => {
       {images.map((image) => (
         <div key={image.imageUrl}>
           <div className="card card-compact">
-            <figure className="flex items-center justify-center h-[500px]">
+            <figure className="flex items-center justify-center h-[500px] -mt-10">
               <img
                 className="bottom-image-carousel"
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
-                  width: "15%",
+                  width: "25%",
                   height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",
