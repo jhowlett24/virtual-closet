@@ -1,0 +1,9 @@
+.random{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    background-image: url("background.svg");
+    background-size: contain;
+    height: "100vh" !important;
+    width: "100wh" !important; 
+  }

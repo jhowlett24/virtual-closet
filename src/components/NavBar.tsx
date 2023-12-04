@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <div className="header">
-      <p>My Wardrobe</p>
+      <p>My Virtual Wardrobe</p>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           {" "}

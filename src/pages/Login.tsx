@@ -1,9 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import '../CSS/Login.css'
 import cheetah from '../Images/cheetah.svg'
 import login from '../Images/login.svg'
-import eye from '../Images/eye.svg'
 
 
 const Login = () => {
