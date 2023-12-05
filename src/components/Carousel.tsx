@@ -20,7 +20,7 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
 
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[30%] right-[25%] z-10 cursor-pointer"
+    className="next-arrow absolute top-[30%] right-[25%] cursor-pointer"
     onClick={onClick}
   >
     <img src={next} className="next-arrow-clueless" alt="Next" />

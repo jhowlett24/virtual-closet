@@ -45,10 +45,9 @@ const NavBar = () => {
             Logout{" "}
           </Link>{" "}
         </li>
-        {/* <li> <Link to='/favorites'>Favorite Fits</Link> </li> */}
       </ul>
 
-      <div className="hamburger" onClick={handleClick}>
+      <div className="hamburger z-15" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} style={{ color: "#FFC0CB" }} />
         ) : (
