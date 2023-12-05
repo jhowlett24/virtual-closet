@@ -8,6 +8,7 @@ import Closet from "./pages/Closet";
 import Login from "./pages/Login";
 import Random from "./pages/Random";
 import InspirationPage from "./pages/InspirationPage";
+import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   return (
@@ -51,9 +52,18 @@ function App() {
         <Route
           path="/login"
           element={
-            <PrivateRoute>
+            <PublicRoute>
               <Login />
-            </PrivateRoute>
+            </PublicRoute>
+          }
+        />
+
+        <Route
+          path="/recoverPassword"
+          element={
+            <PublicRoute>
+              <ForgotPassword />
+            </PublicRoute>
           }
         />
 

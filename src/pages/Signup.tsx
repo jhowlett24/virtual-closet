@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../firebase/config";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import virtualwardrobe from '../images/VIRTUALWARDROBE.svg'
 import cheetah from '../Images/cheetah.svg'
 import '../CSS/Login.css'
@@ -28,7 +28,7 @@ const Signup = () => {
     <div className="signup">
       <form onSubmit={handleSubmit}>
         {error && error}
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen">
           <div className="hero-content flex-col">
             <div className="text-center">
               <h1 className="text-4xl">Virtual Wardrobe</h1>
@@ -59,7 +59,9 @@ const Signup = () => {
                 </div>
               </div>
             </div>
+            <Link to="/login" className="login-item link-to-login"> Already have an account? </Link>
           </div>
+
         </div>
       </form>
       </div>

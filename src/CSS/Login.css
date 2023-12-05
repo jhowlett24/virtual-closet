@@ -3,8 +3,10 @@
 .login-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: lightyellow;
     height: 100%;
+    width: 100%;
     font-family: 'Fira Code';
   }
 
@@ -17,12 +19,22 @@
     background-color: lightyellow;
   }
 
+  .card{
+    justify-content: center;
+  }
+
+  .login-text{
+    font-size: xx-large;
+  }
+
   .login-item{
     margin-top: 1rem;
+    max-width: 100%;
+    color: pink
   }
 
   .login-img{
-    width: 100%;
+    width: 50%;
   }
 
   .form-control{
@@ -37,13 +49,14 @@
 
 .login-link{
     margin-top:2rem;
+    margin-left:8rem;
     color: black;
     outline:auto;
     outline-offset: .3cap;
     outline-color: lightblue;
     width: 20%;
-    
 }
+
 
 .forgot-password-link{
     margin-top: 3rem;
@@ -52,6 +65,11 @@
 .signup{
     font-family: 'Fira Code';
     background-color: lightyellow;
+    width: 100%;
+}
+
+.hero{
+  background-color: lightyellow;
 }
 
 .hero-content{
@@ -61,5 +79,50 @@
 
 .signup-button{
     background-color: white;
-    /* width: 40%; */
+    width: 40%;
+    margin-left: 30%;
 }
+
+input{
+  background-color: lightyellow;
+}
+
+.forgot-password-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightyellow;
+    height: 100%;
+    width: 100%;
+    font-family: 'Fira Code';
+}
+
+.forgot-password{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+.forgot-password-text{
+  padding-bottom: 3rem;
+}
+
+.check-email-text{
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.reset-password-link{
+  margin-top:2rem;
+  margin-left:27%;
+  color: black;
+  outline:auto;
+  outline-offset: .3cap;
+  outline-color: lightblue;
+  width: 45%;
+  text-align: center;
+}
+
