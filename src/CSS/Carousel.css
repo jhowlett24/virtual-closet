@@ -31,15 +31,14 @@
 }
 
 .top-carousel{
-  /* height: 10%; */
   height: 225px;
 }
 
 .bottom-carousel{
-  /* height: 20%; */
   height:250x;
 }
 
+/* 
 @media screen and (max-width: 450px) {
   .next-arrow{
     position: absolute;
@@ -78,4 +77,4 @@
   .bottom-image-carousel{
     width: 60%;
   }
-}
+} */

@@ -7,7 +7,6 @@ import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
 import next from "../Images/next.svg";
 import prev from "../Images/prev.svg";
-import cheetah from "../Images/cheetah.svg";
 
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div

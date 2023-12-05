@@ -1,15 +1,10 @@
 // Carousel.tsx
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
 import '../CSS/Inspiration.css'
-import next from "../Images/next.svg";
-import prev from "../Images/prev.svg";
-import cheetah from "../Images/cheetah.svg";
-
 
 const Carousel = () => {
   const { docs: images, isLoading } = useFireStore("images");

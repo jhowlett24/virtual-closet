@@ -1,12 +1,10 @@
 // Carousel.tsx
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
-import next from "../Images/next.svg";
-import prev from "../Images/prev.svg";
+
 
 const Carousel = () => {
   const { docs: images, isLoading } = useFireStore("bottom");
@@ -31,8 +29,6 @@ const Carousel = () => {
     autoplaySpeed: 1300,
     rtl: true,
     pauseOnHover: false,
-    //prevArrow: <CustomPrevArrow />,
-    //nextArrow: <CustomNextArrow />,
   };
 
   return (

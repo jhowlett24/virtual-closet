@@ -2,8 +2,6 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../firebase/config";
 import { useNavigate, Link } from "react-router-dom";
-import virtualwardrobe from '../images/VIRTUALWARDROBE.svg'
-import cheetah from '../Images/cheetah.svg'
 import '../CSS/Login.css'
 
 

@@ -1,7 +1,5 @@
 import '../CSS/Mannequin.css'
 import cheetah from '../Images/cheetah.svg'
-import Carousel from './Carousel'
-import CarouselBottom from "./CarouselBottom";
 import CarouselContainer from './CarouselContainer';
 
 const Mannequin = () => {

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import useStorage from "../hooks/useStorage";
 import useStorageBottom from "../hooks/useStorageBottom";
 
 const UploadFormBottom = () => {
