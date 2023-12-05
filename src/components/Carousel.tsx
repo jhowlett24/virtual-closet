@@ -18,17 +18,6 @@ const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   </div>
 );
 
-// const CustomNextArrow: React.FC<any> = ({ onClick }) => (
-//   <div
-//     className="next-arrow absolute top-[80%] right-[40%]"
-//     onClick={onClick}
-//   >
-//      <img src={next} className="next-arrow-clueless"></img>
-//   </div>
-// );
-// below is the revised version adding cursor-pointer and z-10 put the arrow bottom above other element
-// I also added alt for better accessiblitiy
-
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
     className="next-arrow absolute top-[80%] right-[25%] z-10 cursor-pointer"

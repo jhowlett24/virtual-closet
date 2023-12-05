@@ -97,7 +97,7 @@ const Random = () => {
         />
         <button
           onClick={getRandomImage}
-          className="bg-black text-white px-8 py-4 mt-4 text-xl rounded-xl mb-10"
+          className="random-text bg-black px-8 py-4 mt-4 text-xl rounded-xl mb-10"
           disabled={isImagesLoading || isBottomsLoading}
         >
           Show Another Random Outfit

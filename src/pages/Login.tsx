@@ -17,7 +17,7 @@ const Login = () => {
                 <input type="password" className="form-control login-item" id = "password" placeholder="password"/> 
                 {/* <img src={eye} className="eye-img"></img> */}
                 <Link to="/" className="login-item login-link"> Login </Link>
-                <Link to="/recoverPasswordI" className="login-item forgot-password-link"> Forgot Password? </Link>
+                <Link to="/recoverPassword" className="login-item forgot-password-link"> Forgot Password? </Link>
                 <Link to="/signup" className="login-item registration-link"> Don't have an account? </Link>
             </div>
             

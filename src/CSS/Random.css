@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap");
+
+
 .random{
     display: flex;
     flex-direction: column;
@@ -6,4 +9,9 @@
     background-size: contain;
     height: "100vh" !important;
     width: "100wh" !important; 
+  }
+
+  .random-text{
+    color: pink;
+    font-family: 'Fira Code';
   }
