@@ -20,7 +20,7 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1300,
     slidesToShow: 3, // Show one slide at a time
     slidesToScroll: 1,
     centerMode: true, // Center the current slide
