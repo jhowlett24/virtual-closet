@@ -5,11 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
-import '../CSS/Inspiration.css'
+import "../CSS/Inspiration.css";
 import next from "../Images/next.svg";
 import prev from "../Images/prev.svg";
 import cheetah from "../Images/cheetah.svg";
-
 
 const Carousel = () => {
   const { docs: images, isLoading } = useFireStore("images");
@@ -27,7 +26,7 @@ const Carousel = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1300,
-    speed: 500,
+    speed: 1300,
     slidesToShow: 3, // Show one slide at a time
     slidesToScroll: 1,
     centerMode: true, // Center the current slide
