@@ -1,3 +1,5 @@
+/* styling and layout for the Login, ForgotPassword and SignUp pages */
+
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap");
 
 .login-container{
@@ -30,11 +32,12 @@
   .login-item{
     margin-top: 1rem;
     max-width: 100%;
-    color: pink
+    color: pink;  
   }
 
   .login-img{
     width: 50%;
+    text-align: center;
   }
 
   .form-control{
@@ -70,6 +73,8 @@
 
 .hero{
   background-color: lightyellow;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content{
@@ -113,16 +118,16 @@ input{
 .check-email-text{
   padding-top: 10%;
   padding-bottom: 15%;
+  text-align: center;
 }
 
 .reset-password-link{
   margin-top:2rem;
-  margin-left:27%;
+  align-self: center;
   color: black;
   outline:auto;
   outline-offset: .3cap;
   outline-color: lightblue;
-  width: 45%;
+  width: fit-content;
   text-align: center;
 }
-

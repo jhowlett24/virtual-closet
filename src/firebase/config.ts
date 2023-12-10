@@ -3,10 +3,9 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+
+// Virtual-Closet Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAgo5qcgTXgCEYtWRRSOUD7v04UrcCIohg",
   authDomain: "image-gallery-453a9.firebaseapp.com",

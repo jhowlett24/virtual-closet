@@ -7,7 +7,7 @@ import "../CSS/Carousel.css"; // Import your custom styles
 
 
 const Carousel = () => {
-  const { docs: images, isLoading } = useFireStore("bottom");
+  const { docs: images, isLoading } = useFireStore("bottom"); //gathers the bottom images from firestore database
 
   if (isLoading) {
     return (
@@ -17,11 +17,11 @@ const Carousel = () => {
     );
   }
 
-  const settings = {
+  const settings = { //customizes certain aspects of the bottom carousel for the inspiration page
     dots: false,
     infinite: true,
     speed: 1300,
-    slidesToShow: 3, // Show one slide at a time
+    slidesToShow: 3, // Show three outfits at a time
     slidesToScroll: 1,
     centerMode: true, // Center the current slide
     centerPadding: "0", // No padding for the center mode
@@ -29,9 +29,17 @@ const Carousel = () => {
     autoplaySpeed: 1300,
     rtl: true,
     pauseOnHover: false,
+    responsive: [ {breakpoint: 480, //changes to show one outfit for mobile device
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }}],
   };
 
-  return (
+  //returns slider (carousel) that gathers images from firestore and displays them as a card with certain settings
+  //such as centering items, height, margin-top, width, etc. 
+
+  return ( 
     <Slider {...settings}>
       {images.map((image) => (
         <div key={image.imageUrl}>

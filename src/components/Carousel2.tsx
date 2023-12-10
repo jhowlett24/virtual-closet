@@ -1,20 +1,14 @@
 // Carousel.tsx
+import React, {Component} from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import useFireStore from "../hooks/useFireStore";
 import "../CSS/Carousel.css"; // Import your custom styles
-<<<<<<< HEAD
 import '../CSS/Inspiration.css'
-=======
-import "../CSS/Inspiration.css";
-import next from "../Images/next.svg";
-import prev from "../Images/prev.svg";
-import cheetah from "../Images/cheetah.svg";
->>>>>>> 3c5ddf815a25ec4fcafe7e51465ec7153df5acf4
 
 const Carousel = () => {
-  const { docs: images, isLoading } = useFireStore("images");
+  const { docs: images, isLoading } = useFireStore("images"); //gathers the top images from firestore database
 
   if (isLoading) {
     return (
@@ -24,19 +18,27 @@ const Carousel = () => {
     );
   }
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 1300,
-    speed: 1300,
-    slidesToShow: 3, // Show one slide at a time
-    slidesToScroll: 1,
-    centerMode: true, // Center the current slide
-    centerPadding: "0", // No padding for the center mode
-    pauseOnHover: false,
-  };
+  //customizes certain aspects of the top carousel for the home page
+   const settings = {
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1300,
+        speed: 1300,
+        slidesToShow: 3, // Show three outfits at a time
+        slidesToScroll: 1,
+        centerMode: true, // Center the current slide
+        centerPadding: "0", // No padding for the center mode
+        pauseOnHover: false,
+        responsive: [ {breakpoint: 480,  //changes to show one outfit for mobile device
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                      }}],
+    };
 
+  //returns slider (carousel) that gathers images from firestore and displays them as a card with certain settings
+  //such as centering items, height, margin-top, width, etc. 
   return (
     <Slider {...settings} className="inspiration slider-top">
       {images.map((image) => (

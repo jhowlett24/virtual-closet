@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap");
+/* styling for the Random Outfit Generator page */
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300&display=swap");
 
 .random{
     display: flex;
     flex-direction: column;
     background-color: lightblue;
-    background-image: url("background.svg");
     background-size: contain;
     height: "100vh" !important;
     width: "100wh" !important; 

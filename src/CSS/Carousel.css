@@ -1,80 +1,83 @@
-/* Carousel.css */
+/* styling for the Carousel that appears on the Home page and the Inspiration page */
 
 .next-arrow{
   position: absolute;
-  top:80%;
+  top:30%;
   right: 25%;
   width: 10%;
 }
 
 .prev-arrow{
   position: absolute;
-  top:80%;
+  top:30%;
   left: 25%;
   width: 10%;
 }
 
 .next-arrow-bottom{
-  top: 50%;
+  top: 30%;
 }
 
 .prev-arrow-bottom{
-  top: 50%;
+  top: 30%;
 }
 
 .top-image-carousel{
-  width: 250px;
+  width: 20%;
 }
 
 .bottom-image-carousel{
-  width: 250px;
+  width: 25%
 }
 
-.top-carousel{
-  height: 225px;
+.top-carousel-card{
+  height: 100%;
 }
 
-.bottom-carousel{
-  height:250x;
+.bottom-carousel-card{
+  height: 500px;
 }
 
-/* 
+/* media query for mobile responsiveness for the carousel on the home page */
+
 @media screen and (max-width: 450px) {
   .next-arrow{
     position: absolute;
-    top: 100%;
+    top: 90%;
     width: 25%;
     right: 10px;
   }
   
   .prev-arrow{
     position: absolute;
-    top: 100%;
+    top: 90%;
     width: 25%;
     left: 10px;
   }
 
   .next-arrow-bottom{
-    top: 60%;
+    top: 10%;
+    right: 10px;
   }
 
   .prev-arrow-bottom{
-    top: 60%;
+    top: 10%;
+    left: 10px;
   }
 
-  .top-carousel{
-    height: 325px;
+  .top-carousel-card{
+    height: 300px;
   }
 
-  .bottom-carousel{
-    height: 500px;
+  .bottom-carousel-card{
+    height: 450px;
   }
 
   .top-image-carousel{
-    width: 60%;
+    width: 75%;
   }
 
   .bottom-image-carousel{
-    width: 60%;
+    width: 90%;
   }
-} */
+}

@@ -10,14 +10,20 @@ const NavBar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  //when Logout is clicked, handleLogOut() implements security 
+  //so that you cannot access other pages without signing back in
   const handleLogOut = async () => {
     try {
-      await signOut(auth);
+      await signOut(auth); 
     } catch (error) {
       console.log(error.message);
     }
   };
 
+
+
+  // NavBar is the header of each page with links to the following pages 
+  // to allow for easy navigation through the website
   return (
     <div className="header">
       <p>My Virtual Wardrobe</p>
@@ -47,6 +53,7 @@ const NavBar = () => {
         </li>
       </ul>
 
+      {/* Mobile version of NavBar is a hamburger/sidebar that displays all the options rather than a header*/}
       <div className="hamburger z-15" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} style={{ color: "#FFC0CB" }} />

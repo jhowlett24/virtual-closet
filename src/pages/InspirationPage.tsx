@@ -3,6 +3,8 @@ import "../CSS/Random.css";
 import '../CSS/Inspiration.css'
 import Inspiration from "../components/Inspiration";
 
+//Inspiration outfits page
+
 const InspirationPage = () => {
   return (
     <div className="inspiration">

@@ -11,6 +11,7 @@ const ImageGallery = () => {
     );
   }
 
+  // bottom image gallery that is displayed in the closet page
   return (
     <div className="text-center text-black font-bold text-4xl mt-10">
       Bottoms:

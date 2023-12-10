@@ -5,6 +5,8 @@ import UploadFormBottom from "../components/UploadFormBottom";
 import ImageGalleryBottom from "../components/ImageGalleryBottom";
 import '../CSS/Closet.css'
 
+//Closet page
+
 const Closet = () => {
   return (
     <div>

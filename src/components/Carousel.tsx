@@ -8,18 +8,21 @@ import "../CSS/Carousel.css"; // Import your custom styles
 import next from "../Images/next.svg";
 import prev from "../Images/prev.svg";
 
+
+// previous arrow for home page
 const CustomPrevArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="prev-arrow absolute top-[30%] left-[25%] z-10 cursor-pointer"
+    className="prev-arrow absolute z-10 cursor-pointer"
     onClick={onClick}
   >
     <img src={prev} className="prev-arrow-clueless" alt="Previous"></img>
   </div>
 );
 
+// next arrow for home page
 const CustomNextArrow: React.FC<any> = ({ onClick }) => (
   <div
-    className="next-arrow absolute top-[30%] right-[25%] cursor-pointer"
+    className="next-arrow absolute cursor-pointer"
     onClick={onClick}
   >
     <img src={next} className="next-arrow-clueless" alt="Next" />
@@ -27,7 +30,7 @@ const CustomNextArrow: React.FC<any> = ({ onClick }) => (
 );
 
 const Carousel = () => {
-  const { docs: images, isLoading } = useFireStore("images");
+  const { docs: images, isLoading } = useFireStore("images"); //gathers the top images from firestore database
 
   if (isLoading) {
     return (
@@ -37,6 +40,7 @@ const Carousel = () => {
     );
   }
 
+  //customizes certain aspects of the top carousel for the home page
   const settings = {
     dots: false,
     infinite: true,
@@ -49,18 +53,20 @@ const Carousel = () => {
     nextArrow: <CustomNextArrow />,
   };
 
+
+  //returns slider (carousel) that gathers images from firestore and displays them as a card with certain settings
+  //such as centering items, height, margin-top, width, etc. 
   return (
     <Slider {...settings} className="slider-top">
       {images.map((image) => (
         <div key={image.imageUrl}>
-          <div className="card card-compact">
-            <div className="flex items-center justify-center h-full">
+          <div className="top-carousel-card card card-compact">
+            <div className="flex items-center justify-center">
               <img
                 className="top-image-carousel"
                 src={image.imageUrl}
                 alt="Shoes"
                 style={{
-                  width: "20%",
                   height: "fit-content",
                   objectFit: "cover",
                   borderRadius: "8px",
