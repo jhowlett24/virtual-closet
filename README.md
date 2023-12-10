@@ -1,6 +1,7 @@
 # To Run
-In terminal, cd to the folder that you have saved the project in and run the following commands: 
+In terminal, go to the folder that you have saved the project in and run the following commands: 
 
+# cd virtual-closet
 # npm install 
 # npm run dev
 
