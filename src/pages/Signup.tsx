@@ -2,9 +2,9 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../firebase/config";
 import { useNavigate, Link } from "react-router-dom";
-import '../CSS/Login.css'
+import "../CSS/Login.css";
 
-
+// Uses createUserWithEmailAndPassword from firebase to make sure an authentic user signs into firebase
 const Signup = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState<string>("");
@@ -57,12 +57,14 @@ const Signup = () => {
                 </div>
               </div>
             </div>
-            <Link to="/login" className="login-item link-to-login"> Already have an account? </Link>
+            <Link to="/login" className="login-item link-to-login">
+              {" "}
+              Already have an account?{" "}
+            </Link>
           </div>
-
         </div>
       </form>
-      </div>
+    </div>
   );
 };
 
